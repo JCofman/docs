@@ -36,7 +36,13 @@ global:
 `}
 </Code>}
 
-5. Open your package.json file and add the following
+5. Open your package.json file and make sure that you have now installed as a dependency. If you dont have it installed run:
+
+${<TerminalInput>npm install now --save-dev</TerminalInput>}
+or by using yarn
+${<TerminalInput>yarn add --dev now</TerminalInput>}
+   
+6. Edit your package.json file and add the following
 information, adapted for your own deployment. This is used to run the alias command and point your
 domain to the correct deployment (you could also put
 this in a [now.json](https://zeit.co/blog/now-json) file):
@@ -51,7 +57,9 @@ ${
     ...
 }`}</Code>}
 
-6. Also add the following 2 scripts to the ${<InlineCode>script</InlineCode>} property in your package.json file. These are used by your Travis config. The first is to deploy and the second is used to alias your latest deploy:
+7. Also add the following 2 scripts to the ${<InlineCode>script</InlineCode>} property in your package.json file 
+   (If you are on a free plan you may need to add ${<InlineCode>--production</InlineCode>} flag).
+   These are used by your Travis config. The first is to deploy and the second is used to alias your latest deploy:
 
 ${
 <Code>{`{
