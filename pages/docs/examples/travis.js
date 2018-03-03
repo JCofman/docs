@@ -74,6 +74,6 @@ ${
 </Code>
 }
 
-7. Test it out by committing your code to Github. Check out your [travis-ci.org](https://travis-ci.org) build feed.
+8. Test it out by committing your code to Github. Check out your [travis-ci.org](https://travis-ci.org) build feed.
 
 `)
